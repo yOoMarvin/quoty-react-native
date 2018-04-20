@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import QuoteBox from './components/QuoteBox.js';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Quoty - your quote app.</Text>
+        <QuoteBox />
       </View>
     );
   }
@@ -13,10 +15,11 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 8,
     flex: 1,
+    padding: 16,
     flexDirection: 'column',
     justifyContent: 'space-evenly',
+    backgroundColor: '#42f4a1',
   },
   title: {
     fontSize: 28,
