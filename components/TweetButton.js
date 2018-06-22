@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default class TweetButton extends React.Component {
-    _onPressTwitter = () => {
+    onPressTwitter = () => {
         console.log('Tweet Button pressed');
     }
     render() {
@@ -10,7 +10,7 @@ export default class TweetButton extends React.Component {
             <Button
                 style = {styles.tweetButton}
                 title ="Tweet!"
-                onPress = {this._onPressTwitter}
+                onPress = {this.onPressTwitter}
             />
         );
     }

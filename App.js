@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import QuoteBox from './components/QuoteBox.js';
-import TweetButton from './components/TweetButton.js'
+import QuoteBox from './components/QuoteBox';
+import TweetButton from './components/TweetButton'
+import NewQuote from './components/NewQuote'
 
 export default class App extends React.Component {
   render() {
@@ -11,6 +12,7 @@ export default class App extends React.Component {
         <QuoteBox />
         <View style={styles.buttonContainer}>
           <TweetButton />
+          <NewQuote />
         </View>
       </View>
     );
@@ -28,5 +30,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: 'bold',
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   }
 });
